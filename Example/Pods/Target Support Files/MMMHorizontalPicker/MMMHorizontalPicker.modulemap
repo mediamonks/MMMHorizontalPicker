@@ -1,0 +1,6 @@
+module MMMHorizontalPicker {
+  umbrella header "MMMHorizontalPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

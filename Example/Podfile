@@ -1,0 +1,14 @@
+platform :ios, '12.1'
+
+source 'https://github.com/mediamonks/MMMSpecs.git'
+source 'https://cdn.cocoapods.org/'
+
+use_modular_headers!
+
+inhibit_all_warnings!
+
+target 'Example' do
+
+  pod 'MMMHorizontalPicker', :path => '..'
+
+end

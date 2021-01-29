@@ -1,0 +1,1 @@
+../../../MMMCommonUI/Sources/MMMCommonUIObjC/MMMPhoto.h

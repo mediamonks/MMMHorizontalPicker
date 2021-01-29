@@ -1,0 +1,6 @@
+module MMMLog {
+  umbrella header "MMMLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

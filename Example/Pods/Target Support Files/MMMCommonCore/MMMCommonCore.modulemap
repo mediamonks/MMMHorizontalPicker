@@ -1,0 +1,6 @@
+module MMMCommonCore {
+  umbrella header "MMMCommonCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
