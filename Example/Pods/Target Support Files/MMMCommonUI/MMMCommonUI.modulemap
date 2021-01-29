@@ -1,6 +1,0 @@
-module MMMCommonUI {
-  umbrella header "MMMCommonUI-umbrella.h"
-
-  export *
-  module * { export * }
-}

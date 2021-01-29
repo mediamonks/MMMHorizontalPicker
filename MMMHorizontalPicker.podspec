@@ -25,11 +25,7 @@ Pod::Spec.new do |s|
 	s.static_framework = true	
 	s.pod_target_xcconfig = {
 		"DEFINES_MODULE" => "YES"
-	}	
-  
-	s.test_spec 'Tests' do |ss|
-		ss.source_files = "Tests/*.{m}"
-	end  
+	}
 
 	s.default_subspec = 'ObjC'
 end

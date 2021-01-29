@@ -1,6 +1,0 @@
-module MMMObservables {
-  umbrella header "MMMObservables-umbrella.h"
-
-  export *
-  module * { export * }
-}

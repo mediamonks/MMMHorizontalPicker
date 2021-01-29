@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Example
 //
-//  Created by Dax Rahusen on 29/01/2021.
+//  Copyright (C) 2016-2020 MediaMonks. All rights reserved.
 //
 
 import UIKit
@@ -92,6 +92,5 @@ private class Item: UIControl {
 	}
 	
 	override var intrinsicContentSize: CGSize { .init(width: index % 2 == 0 ? 140 : 220, height: 40) }
-	
 }
 
