@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MMMCommonCore",
+        "repositoryURL": "https://github.com/mediamonks/MMMCommonCore",
+        "state": {
+          "branch": null,
+          "revision": "e00a2f92c1fbf9e94df674eb87f8d9899618a42a",
+          "version": "1.8.1"
+        }
+      },
+      {
+        "package": "MMMCommonUI",
+        "repositoryURL": "https://github.com/mediamonks/MMMCommonUI",
+        "state": {
+          "branch": null,
+          "revision": "5ee83f328e5ac9e372e85c8d32ad4e6bcbf9ae6b",
+          "version": "3.6.1"
+        }
+      },
+      {
+        "package": "MMMLoadable",
+        "repositoryURL": "https://github.com/mediamonks/MMMLoadable",
+        "state": {
+          "branch": null,
+          "revision": "0e69e519e43aa5e7d79c1a8ddf6b8be83a687e42",
+          "version": "1.6.4"
+        }
+      },
+      {
+        "package": "MMMLog",
+        "repositoryURL": "https://github.com/mediamonks/MMMLog",
+        "state": {
+          "branch": null,
+          "revision": "74dd34c10334216c0e1a8da062b1d0c6cda658ff",
+          "version": "1.3.1"
+        }
+      },
+      {
+        "package": "MMMObservables",
+        "repositoryURL": "https://github.com/mediamonks/MMMObservables",
+        "state": {
+          "branch": null,
+          "revision": "2d0673911a397c9074ba380ace542b95d1ab42c1",
+          "version": "1.4.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
