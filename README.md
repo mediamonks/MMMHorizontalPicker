@@ -115,3 +115,9 @@ func horizontalPicker(_ picker: MMMHorizontalPicker, update view: UIView, center
  - `default` In this mode all item views define their preferred width via Auto Layout.
  - `paged` In this mode the width of every item will be constrainted to the width of the picker adjusted to `contentInsets`.
  - `uniform` In this mode the width of every item will be constrainted to the width of the widest item adjusted to `contentInsets`.
+
+## Ready for liftoff? 🚀
+
+We're always looking for talent. Join one of the fastest-growing rocket ships in
+the business. Head over to our [careers page](https://media.monks.com/careers)
+for more info!
