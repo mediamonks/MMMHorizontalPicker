@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MMMHorizontalPicker  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="MMMHorizontalPicker  Reference"></a>
+
+    <header class="header">
+      <a href="https://media.monks.com">
+        <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Media.Monks" class="header-logo" />
+      </a>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">MMMHorizontalPicker Reference</a>
+      <img class="carat" src="img/carat.png" alt=""/>
+      MMMHorizontalPicker  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <h1 id='mmmhorizontalpicker' class='heading'>MMMHorizontalPicker</h1>
+
+<p><a href="https://github.com/mediamonks/MMMHorizontalPicker/actions?query=workflow%3ABuild"><img src="https://github.com/mediamonks/MMMHorizontalPicker/workflows/Build/badge.svg" alt="Build"></a></p>
+
+<p>(This is a part of <code>MMMTemple</code> suite of iOS libraries we use at <a href="https://www.mediamonks.com/">MediaMonks</a>.)</p>
+<h2 id='demo' class='heading'>Demo</h2>
+
+<p><img src="Preview.gif" alt="Preview"></p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">source</span> <span class="s1">'https://github.com/mediamonks/MMMSpecs.git'</span>
+<span class="n">source</span> <span class="s1">'https://github.com/CocoaPods/Specs.git'</span>
+<span class="p">.</span><span class="nf">.</span><span class="p">.</span>
+<span class="nf">pod</span> <span class="s1">'MMMHorizontalPicker'</span>
+</code></pre>
+
+<p>SPM:</p>
+<pre class="highlight swift"><code><span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/mediamonks/MMMHorizontalPicker"</span><span class="p">,</span> <span class="o">.</span><span class="nf">upToNextMajor</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="s">"1.1.0"</span><span class="p">))</span>
+</code></pre>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>Simply add a <code>MMMHorizontalPicker</code> to your <code>UIView</code>, afterwards there are multiple configuration options available.</p>
+<pre class="highlight swift"><code><span class="c1">// Initialise a new picker, more info on the styles below.</span>
+<span class="k">let</span> <span class="nv">pickerView</span> <span class="o">=</span> <span class="kt">MMMHorizontalPicker</span><span class="p">(</span><span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span>
+
+<span class="c1">// You probably want to layout the picker as well.</span>
+<span class="nf">addSubview</span><span class="p">(</span><span class="n">pickerView</span><span class="p">)</span>
+
+<span class="c1">// Optional view which when set is used to calculate prefered height of the picker.</span>
+<span class="n">pickerView</span><span class="o">.</span><span class="n">prototypeView</span> <span class="o">=</span> <span class="kt">ItemView</span><span class="p">()</span> 
+
+<span class="c1">// Setting the delegate is essential to supply the picker with views.</span>
+<span class="n">pickerView</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span> 
+
+<span class="c1">// The distance to keep between two neigbour item views.</span>
+<span class="n">pickerView</span><span class="o">.</span><span class="n">spacing</span> <span class="o">=</span> <span class="mi">30</span>
+
+<span class="c1">// All the item views will be positioned within the rect obtained by insetting the bounds</span>
+<span class="c1">// by these insets.</span>
+<span class="n">pickerView</span><span class="o">.</span><span class="n">contentInsets</span> <span class="o">=</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">left</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="nv">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">right</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
+
+<span class="c1">// The current index of the pickerView, read-only.</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"Index: "</span><span class="p">,</span> <span class="n">pickerView</span><span class="o">.</span><span class="n">currentItemIndex</span><span class="p">)</span>
+
+<span class="c1">// Set the current index of the pickerView, will scroll to the index.</span>
+<span class="n">pickerView</span><span class="o">.</span><span class="nf">setCurrentItemIndex</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+
+<span class="c1">// Should be called when the number of items change.</span>
+<span class="n">pickerView</span><span class="o">.</span><span class="nf">reload</span><span class="p">()</span>
+
+</code></pre>
+<h3 id='mmmhorizontalpickerdelegate' class='heading'>MMMHorizontalPickerDelegate</h3>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">numberOfItemsForHorizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt">MMMHorizontalPicker</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="c1">// Return the number of items in your picker.</span>
+    <span class="k">return</span> <span class="mi">5</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">horizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt">MMMHorizontalPicker</span><span class="p">,</span> <span class="n">viewForItemWith</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIView</span> <span class="p">{</span>
+    <span class="c1">// Return the UIView for a item on a certain index.</span>
+    <span class="k">return</span> <span class="kt">ItemView</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="n">index</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">horizontalPickerDidChangeCurrentItemIndex</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt">MMMHorizontalPicker</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// The user swiped or pickerView.setCurrentItemIndex() was called.</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Current item index changed:"</span><span class="p">,</span> <span class="n">picker</span><span class="o">.</span><span class="n">currentItemIndex</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">horizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt">MMMHorizontalPicker</span><span class="p">,</span> <span class="n">recycle</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Called after an item view becomes invisible and is removed from the picker. The delegate</span>
+    <span class="c1">// can choose to store it somewhere and reuse it later or can just forget it and simply use </span>
+    <span class="c1">// a new view next time.</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">horizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt">MMMHorizontalPicker</span><span class="p">,</span> <span class="n">prepare</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Called after the given item view is added into the view hierarchy.</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">horizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt">MMMHorizontalPicker</span><span class="p">,</span> <span class="n">didScroll</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Called when the picker scrolls to a new offset.</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">horizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt">MMMHorizontalPicker</span><span class="p">,</span> <span class="n">update</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">centerProximity</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="c1">// Called every time the viewport position changes (every frame in case of animation or dragging) </span>
+    <span class="c1">// with an updated "center proximity" value for each visible item view.</span>
+    <span class="c1">//</span>
+    <span class="c1">// "Center proximity" is a difference between the center of the item and the current viewport </span>
+    <span class="c1">// position in "index space" coordinates.</span>
+    <span class="c1">//</span>
+    <span class="c1">// For example, if the current item is in the center of the view port already, then its </span>
+    <span class="c1">// "center proximiy" value will be 0, and the same value for the view right (left) to the central</span>
+    <span class="c1">// item will be 1 (-1). When dragging the contents so the right view gets closer to the center, </span>
+    <span class="c1">// then its center proximity will be continously approaching 0.</span>
+    <span class="c1">//</span>
+    <span class="c1">// This is handy when you need to dim or transforms items when they get farther from the center, </span>
+    <span class="c1">// but be careful with doing heavy things here.</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='styles' class='heading'>Styles</h3>
+
+<ul>
+<li><code>default</code> In this mode all item views define their preferred width via Auto Layout.</li>
+<li><code>paged</code> In this mode the width of every item will be constrainted to the width of the picker adjusted to <code>contentInsets</code>.</li>
+<li><code>uniform</code> In this mode the width of every item will be constrainted to the width of the widest item adjusted to <code>contentInsets</code>.</li>
+</ul>
+<h2 id='ready-for-liftoff' class='heading'>Ready for liftoff? 🚀</h2>
+
+<p>We&rsquo;re always looking for talent. Join one of the fastest-growing rocket ships in
+the business. Head over to our <a href="https://media.monks.com/careers">careers page</a>
+for more info!</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2022 <a class="link" href="https://github.com/mediamonks/MMMHorizontalPicker" target="_blank" rel="external noopener">MediaMonks</a>. All rights reserved. (Last updated: 2022-04-26)</p>
+      <p></p>
+    </section>
+  </body>
+</html>
