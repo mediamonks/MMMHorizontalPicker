@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MMMHorizontalPickerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/MMMHorizontalPickerDelegate" class="dashAnchor"></a>
+
+    <a title="MMMHorizontalPickerDelegate Protocol Reference"></a>
+
+    <header class="header">
+      <a href="https://media.monks.com">
+        <img src="../img/logo.png" srcset="../img/logo@2x.png 2x" alt="Media.Monks" class="header-logo" />
+      </a>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">MMMHorizontalPicker Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MMMHorizontalPickerDelegate Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MMMHorizontalPickerStyle.html">MMMHorizontalPickerStyle</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MMMHorizontalPickerDelegate.html">MMMHorizontalPickerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MMMHorizontalPickerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MMMHorizontalPickerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">MMMHorizontalPickerDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                </div>
+              </div>
+            
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MMMHorizontalPickerDelegate(im)numberOfItemsForHorizontalPicker:"></a>
+                    <a name="//apple_ref/swift/Method/-numberOfItemsForHorizontalPicker:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MMMHorizontalPickerDelegate(im)numberOfItemsForHorizontalPicker:">-numberOfItemsForHorizontalPicker:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The total number of items. Note that this is read only once, when <code>reload</code> is called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">numberOfItemsForHorizontalPicker</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">picker</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">numberOfItemsForHorizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPicker:viewForItemWithIndex:"></a>
+                    <a name="//apple_ref/swift/Method/-horizontalPicker:viewForItemWithIndex:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPicker:viewForItemWithIndex:">-horizontalPicker:<wbr>viewForItemWithIndex:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The delegate must provide a view showing the given item, it should use Auto Layout and at least the width should be defined.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nf">horizontalPicker</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">picker</span>
+                <span class="nf">viewForItemWithIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">index</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">horizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span><span class="p">,</span> <span class="n">viewForItemWith</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPickerDidChangeCurrentItemIndex:"></a>
+                    <a name="//apple_ref/swift/Method/-horizontalPickerDidChangeCurrentItemIndex:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPickerDidChangeCurrentItemIndex:">-horizontalPickerDidChangeCurrentItemIndex:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">horizontalPickerDidChangeCurrentItemIndex</span><span class="p">:(</span><span class="n"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">picker</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">horizontalPickerDidChangeCurrentItemIndex</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPicker:recycleView:"></a>
+                    <a name="//apple_ref/swift/Method/-horizontalPicker:recycleView:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPicker:recycleView:">-horizontalPicker:<wbr>recycleView:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after an item view becomes invisible and is removed from the picker.</p>
+
+<ul>
+<li>The delegate can choose to store it somewhere and reuse it later or can just forget it and simply use a new view next time.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">horizontalPicker</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">picker</span>
+             <span class="nf">recycleView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">view</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">horizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span><span class="p">,</span> <span class="n">recycle</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPicker:prepareView:"></a>
+                    <a name="//apple_ref/swift/Method/-horizontalPicker:prepareView:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPicker:prepareView:">-horizontalPicker:<wbr>prepareView:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after the given item view is added into the view hierarchy.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">horizontalPicker</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">picker</span>
+             <span class="nf">prepareView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">view</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">horizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span><span class="p">,</span> <span class="n">prepare</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPicker:updateView:centerProximity:"></a>
+                    <a name="//apple_ref/swift/Method/-horizontalPicker:updateView:centerProximity:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPicker:updateView:centerProximity:">-horizontalPicker:<wbr>updateView:<wbr>centerProximity:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called every time the viewport position changes (every frame in case of animation or dragging) with an updated
+ &ldquo;center proximity&rdquo; value for each visible item view.</p>
+
+<p>&ldquo;Center proximity&rdquo; is a difference between the center of the item and the current viewport
+ position in &ldquo;index space&rdquo; coordinates.</p>
+
+<p>For example, if the current item is in the center of the view port already, then its &ldquo;center proximiy&rdquo; value will be 0,
+ and the same value for the view right (left) to the central item will be 1 (-1). When dragging the contents so the
+ right view gets closer to the center, then its center proximity will be continously approaching 0.</p>
+
+<p>This is handy when you need to dim or transforms items when they get farther from the center,
+ but be careful with doing heavy things here.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">horizontalPicker</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">picker</span>
+              <span class="nf">updateView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">view</span>
+         <span class="nf">centerProximity</span><span class="p">:(</span><span class="n">CGFloat</span><span class="p">)</span><span class="nv">centerProximity</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">horizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span><span class="p">,</span> <span class="n">update</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">centerProximity</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPicker:didScroll:"></a>
+                    <a name="//apple_ref/swift/Method/-horizontalPicker:didScroll:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MMMHorizontalPickerDelegate(im)horizontalPicker:didScroll:">-horizontalPicker:<wbr>didScroll:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the picker scrolls to a new offset.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">horizontalPicker</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">picker</span>
+               <span class="nf">didScroll</span><span class="p">:(</span><span class="n">CGFloat</span><span class="p">)</span><span class="nv">offset</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">horizontalPicker</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt"><a href="../Classes/MMMHorizontalPicker.html">MMMHorizontalPicker</a></span><span class="p">,</span> <span class="n">didScroll</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2022 <a class="link" href="https://github.com/mediamonks/MMMHorizontalPicker" target="_blank" rel="external noopener">MediaMonks</a>. All rights reserved. (Last updated: 2022-04-26)</p>
+      <p></p>
+    </section>
+  </body>
+</html>

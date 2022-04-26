@@ -1,6 +1,68 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/runner/work/MMMHorizontalPicker/MMMHorizontalPicker/Sources/MMMHorizontalPicker.h",
+      "line": 12,
+      "symbol": "MMMHorizontalPickerStyle",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/MMMHorizontalPicker/MMMHorizontalPicker/Sources/MMMHorizontalPicker.h",
+      "line": 12,
+      "symbol": "MMMHorizontalPickerStyle",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/MMMHorizontalPicker/MMMHorizontalPicker/Sources/MMMHorizontalPicker.h",
+      "line": 32,
+      "symbol": "MMMHorizontalPicker.style",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/MMMHorizontalPicker/MMMHorizontalPicker/Sources/MMMHorizontalPicker.h",
+      "line": 34,
+      "symbol": "MMMHorizontalPicker.delegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/MMMHorizontalPicker/MMMHorizontalPicker/Sources/MMMHorizontalPicker.h",
+      "line": 49,
+      "symbol": "MMMHorizontalPicker.-setCurrentItemIndex:animated:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/MMMHorizontalPicker/MMMHorizontalPicker/Sources/MMMHorizontalPicker.h",
+      "line": 56,
+      "symbol": "MMMHorizontalPicker.-initWithStyle:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/MMMHorizontalPicker/MMMHorizontalPicker/Sources/MMMHorizontalPicker.h",
+      "line": 61,
+      "symbol": "MMMHorizontalPicker.-initWithFrame:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/MMMHorizontalPicker/MMMHorizontalPicker/Sources/MMMHorizontalPicker.h",
+      "line": 62,
+      "symbol": "MMMHorizontalPicker.-initWithCoder:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/MMMHorizontalPicker/MMMHorizontalPicker/Sources/MMMHorizontalPicker.h",
+      "line": 78,
+      "symbol": "MMMHorizontalPickerDelegate.-horizontalPickerDidChangeCurrentItemIndex:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/runner/work/MMMHorizontalPicker/MMMHorizontalPicker"
 }
