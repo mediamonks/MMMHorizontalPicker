@@ -6,7 +6,7 @@
 
 ## Demo
 
-![Preview](Preview.gif)
+![Preview](https://github.com/mediamonks/MMMHorizontalPicker/raw/main/Preview.gif)
 
 ## Installation
 
